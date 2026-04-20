@@ -3,7 +3,8 @@
  * Unified interface for backend communication.
  */
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = (process.env.NEXT_PUBLIC_API_URL || "https://hammad712-digitalbillboard.hf.space") as string;
+
 const TOKEN_KEY = 'access_token';
 
 export const setToken = (token: string) => {
